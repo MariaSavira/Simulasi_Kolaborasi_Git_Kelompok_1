@@ -28,9 +28,11 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: .fromSeed(
+          seedColor: const Color.fromARGB(255, 238, 163, 239),
+        ),
       ),
-      home: const MyHomePage(title: 'Flutter Feby Rahmawati Ahmad'),
+      home: const MyHomePage(title: 'Tugas Flutter'),
     );
   }
 }
@@ -88,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Text(
+        child: Column(
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -102,28 +104,64 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
           // action in the IDE, or press "p" in the console), to see the
           // wireframe for each widget.
-          'Feby Rahmawati Ahmad - 244107060139',
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          mainAxisAlignment: .center,
+          children: [
+            const Text('Feby Rahmawati Ahmad - 244107060139'),
+            const SizedBox(height: 20),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: 30),
+
+            //tombol ke halaman portofolio
+            ElevatedButton(
+              child: const Text("Lihat Portofolio"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const PortofolioPage(),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+//halaman portofolio
+class PortofolioPage extends StatelessWidget {
+  const PortofolioPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Portofolio Feby Rahmawati Ahmad")),
+
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Nama: Feby Rahmawati Ahmad", style: TextStyle(fontSize: 22)),
+
+            Text("NIM: 244107060139", style: TextStyle(fontSize: 20)),
+
+            SizedBox(height: 20),
+
+            Text("Skill:"),
+            Text("- Flutter Dasar"),
+          ],
         ),
       ),
     );
-    // mainAxisAlignment: .center,
-    //children: [
-    // const Text('You have pushed the button this many times:'),
-    // Text(
-    //'$_counter',
-    // style: Theme.of(context).textTheme.headlineMedium,
-    // ),
-    //),
-    // ],
-    //),
-    // ),
-    // );
-    // floatingActionButton: FloatingActionButton(
-    //  onPressed: _incrementCounter,
-    // tooltip: 'Increment',
-    // child: const Icon(Icons.add),
-    // ),
-    //  );
   }
 }

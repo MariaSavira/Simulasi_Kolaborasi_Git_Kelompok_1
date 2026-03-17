@@ -15,14 +15,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // This is the theme of your application.
         //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload".
+        // TRY THIS: Try running your application with "flutter run".
+        // You'll see the application has a purple toolbar.
+        // Then try changing the seedColor below and hot reload.
         //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload.
-        //
+        // Notice that the counter didn't reset during reload.
         // This works for code too, not just values.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -34,13 +31,8 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  // This widget is the home page of your application. It is stateful,
-  // meaning that it has a State object (defined below) that contains
-  // fields that affect how it looks.
-
-  // This class is the configuration for the state.
-  // It holds the values (in this case the title) provided by the parent
-  // and used by the build method of the State.
+  // This widget is the home page of your application.
+  // It is stateful, meaning it has a State object.
 
   final String title;
 
@@ -49,15 +41,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something
-      // has changed in this State, which causes it to rerun the build method.
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,10 +49,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color
+        // TRY THIS: Try changing the color here
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-
-        // Here we take the value from the MyHomePage object
         title: Text(widget.title),
       ),
 
@@ -107,20 +88,19 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-// ===============================
 // Halaman Portofolio
-// ===============================
 
 class PortofolioPage extends StatelessWidget {
   const PortofolioPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Portofolio Najwa"),
       ),
+
       body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -139,14 +119,12 @@ class PortofolioPage extends StatelessWidget {
             SizedBox(height: 20),
 
             Text("Skill:"),
-
-            Text("- Flutter"),
             Text("- UI Design"),
-            Text("- Git"),
 
           ],
         ),
       ),
+
     );
   }
 }

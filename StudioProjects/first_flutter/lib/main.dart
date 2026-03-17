@@ -105,9 +105,24 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: .center,
           children: [
             const Text('Adhe Widya G.K - 244107060067'),
+            const SizedBox(height: 20),
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const SizedBox(height: 30),
+
+            //tombol ke halaman portofolio
+            ElevatedButton(
+              child: const Text("Lihat Portofolio"),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const PortofolioPage(),
+                  ),
+                );
+              },
             ),
           ],
         ),
@@ -116,6 +131,43 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
+
+//halaman portofolio
+class PortofolioPage extends StatelessWidget {
+  const PortofolioPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Portofolio Adhe"),
+      ),
+
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+
+            Text(
+              "Nama: Adhe Widya G.K",
+              style: TextStyle(fontSize: 22),
+            ),
+
+            Text(
+              "NIM: 244107060067",
+              style: TextStyle(fontSize: 20),
+            ),
+
+            SizedBox(height: 20),
+
+            Text("Skill:"),
+            Text("- Flutter Dasar"),
+          ],
+        ),
       ),
     );
   }

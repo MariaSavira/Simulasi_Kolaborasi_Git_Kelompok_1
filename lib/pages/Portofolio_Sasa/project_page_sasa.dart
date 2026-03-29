@@ -6,19 +6,19 @@ class ProjectsPageSasa extends StatelessWidget {
     {
       'title': 'Mental Health App',
       'desc': 'Aplikasi mobile untuk mendukung kesehatan mental pengguna.',
-      'image': 'assets/project1.png',
+      'image': 'assets/project_sasa_1.png',
       'link': 'https://github.com/MariaSavira/Moodly-PBL-SMT-4',
     },
     {
       'title': 'Furrfect Website',
       'desc': 'Website petshop dengan fitur lengkap.',
-      'image': 'assets/project2.png',
+      'image': 'assets/project_sasa_2.png',
       'link': 'https://github.com/',
     },
     {
       'title': 'Website Laboratorium Business Analytics',
       'desc': 'Project PBL Semester 3 Jurusan Teknologi Indormasi',
-      'image': 'assets/project3.png',
+      'image': 'assets/project_sasa_3.png',
       'link': 'https://github.com/MariaSavira/PBL-SMT-3'
     }
   ];

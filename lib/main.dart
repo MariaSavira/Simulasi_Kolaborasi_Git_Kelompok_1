@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portofolio_sasa/pages/about_page_sasa.dart';
-import 'package:portofolio_sasa/pages/project_page_sasa.dart';
-import 'pages/homepage_sasa.dart';
+import 'package:portofolio_sasa/pages/Portofolio_Sasa/about_page_sasa.dart';
+import 'package:portofolio_sasa/pages/Portofolio_Sasa/project_page_sasa.dart';
+import 'pages/Portofolio_Sasa/homepage_sasa.dart';
 
 void main() {
   runApp(MyApp());

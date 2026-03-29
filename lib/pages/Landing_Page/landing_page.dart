@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Portofolio_Sasa/main_sasa.dart';
+import '../Portofolio_Najwa/main_najwa.dart';
 
 class LandingPage extends StatelessWidget {
   final List<String> members = [
@@ -12,6 +13,7 @@ class LandingPage extends StatelessWidget {
 
   final Map<String, Widget> memberPages = {
     'Maria Savira': MainSasaPage(),
+    'Najwa Kus Syafira': MainNajwaPage(),
     // tambahin kesini misal:
     // 'Feby Rahmawati Ahmad': MainFebyPage(),
   };

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Portofolio_Sasa/main_sasa.dart';
+import '../Portofolio_Najwa/main_najwa.dart';
 import '../Portofolio_Adhe/main_adhe.dart';
 
 class LandingPage extends StatelessWidget {
@@ -13,6 +14,7 @@ class LandingPage extends StatelessWidget {
 
   final Map<String, Widget> memberPages = {
     'Maria Savira': MainSasaPage(),
+    'Najwa Kus Syafira': MainNajwaPage(),
     'Adhe Widya Galih Kartika': MainAdhePage(),
     // tambahin kesini misal:
     // 'Feby Rahmawati Ahmad': MainFebyPage(),

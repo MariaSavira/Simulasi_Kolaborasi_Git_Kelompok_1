@@ -15,7 +15,7 @@ class LandingPage extends StatelessWidget {
 
   final Map<String, Widget> memberPages = {
     'Maria Savira': MainSasaPage(),
-    'Muhammad Yusuf': MainYusufPage()
+    'Muhammad Yusuf': MainYusufPage(),
     'Najwa Kus Syafira': MainNajwaPage(),
     'Adhe Widya Galih Kartika': MainAdhePage(),
     // tambahin kesini misal:

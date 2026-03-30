@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../Portofolio_Sasa/main_sasa.dart';
+import '../Portofolio_Feby/main_feby.dart';
 import '../Portofolio_Yusuf/main_yusuf.dart';
 import '../Portofolio_Najwa/main_najwa.dart';
 import '../Portofolio_Adhe/main_adhe.dart';
@@ -10,11 +11,12 @@ class LandingPage extends StatelessWidget {
     'Feby Rahmawati Ahmad',
     'Maria Savira',
     'Najwa Kus Syafira',
-    'Muhammad Yusuf'
+    'Muhammad Yusuf',
   ];
 
   final Map<String, Widget> memberPages = {
     'Maria Savira': MainSasaPage(),
+    'Feby Rahmawati Ahmad': MainFebyPage(),
     'Muhammad Yusuf': MainYusufPage(),
     'Najwa Kus Syafira': MainNajwaPage(),
     'Adhe Widya Galih Kartika': MainAdhePage(),
@@ -22,12 +24,10 @@ class LandingPage extends StatelessWidget {
     // 'Feby Rahmawati Ahmad': MainFebyPage(),
   };
 
-@override
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Our Portfolio'),
-      ),
+      appBar: AppBar(title: Text('Our Portfolio')),
       body: ListView.builder(
         padding: EdgeInsets.all(16),
         itemCount: members.length,
@@ -47,9 +47,7 @@ class LandingPage extends StatelessWidget {
                 if (memberPages.containsKey(name)) {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                      builder: (_) => memberPages[name]!,
-                    ),
+                    MaterialPageRoute(builder: (_) => memberPages[name]!),
                   );
                 }
               },

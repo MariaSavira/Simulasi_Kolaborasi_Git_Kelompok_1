@@ -57,7 +57,7 @@ class ProjectsPageSasa extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: Image.asset(
                   project['image'],
-                  height: 150,
+                  height: 250,
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),

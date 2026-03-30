@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
-import 'homepage_sasa.dart';
-import 'about_page_sasa.dart';
-import 'project_page_sasa.dart';
+import 'homepage_feby.dart';
+import 'about_page_feby.dart';
+import 'project_page_feby.dart';
 
-class MainSasaPage extends StatefulWidget {
+class MainFebyPage extends StatefulWidget {
   @override
-  _MainSasaPageState createState() => _MainSasaPageState();
+  _MainFebyPageState createState() => _MainFebyPageState();
 }
 
-class _MainSasaPageState extends State<MainSasaPage> {
+class _MainFebyPageState extends State<MainFebyPage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    HomePageSasa(),
-    AboutPageSasa(),
-    ProjectsPageSasa(),
+    HomePageFeby(),
+    AboutPageFeby(),
+    ProjectsPageFeby(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Sasa Portfolio')),
+      appBar: AppBar(title: Text('Feby Portfolio')),
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,

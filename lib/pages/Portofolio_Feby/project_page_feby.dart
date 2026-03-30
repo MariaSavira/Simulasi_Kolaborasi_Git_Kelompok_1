@@ -1,25 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class ProjectsPageSasa extends StatelessWidget {
+class ProjectsPageFeby extends StatelessWidget {
   final List<Map<String, dynamic>> projects = [
     {
       'title': 'Mental Health App',
       'desc': 'Aplikasi mobile untuk mendukung kesehatan mental pengguna.',
       'image': 'assets/project_sasa_1.png',
       'link': 'https://github.com/MariaSavira/Moodly-PBL-SMT-4',
-    },
-    {
-      'title': 'Furrfect Website',
-      'desc': 'Website petshop dengan fitur lengkap.',
-      'image': 'assets/project_sasa_2.png',
-      'link': 'https://github.com/',
-    },
-    {
-      'title': 'Website Laboratorium Business Analytics',
-      'desc': 'Project PBL Semester 3 Jurusan Teknologi Indormasi',
-      'image': 'assets/project_sasa_3.png',
-      'link': 'https://github.com/MariaSavira/PBL-SMT-3'
     }
   ];
 

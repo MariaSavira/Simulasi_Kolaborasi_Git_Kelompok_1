@@ -10,7 +10,7 @@ class AboutPageSasa extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 60,
-            backgroundImage: AssetImage('assets/profile.jpg'),
+            backgroundImage: AssetImage('assets/foto_sasa.png'),
           ),
 
           SizedBox(height: 20),
